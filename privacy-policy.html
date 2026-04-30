@@ -8,17 +8,27 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #111111;
+      background: linear-gradient(160deg, #3D3010 0%, #1E1B14 50%, #111111 100%);
+      background-attachment: fixed;
       color: #f2f2f7;
       padding: 40px 24px 80px;
+      min-height: 100vh;
     }
     .container { max-width: 680px; margin: 0 auto; }
     a.back {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       color: #F5C842;
       text-decoration: none;
       font-size: 0.9rem;
       margin-bottom: 32px;
+    }
+    a.back img {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
     a.back:hover { text-decoration: underline; }
     h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
@@ -37,16 +47,19 @@
     ul { padding-left: 20px; margin-top: 8px; }
     li { margin-bottom: 6px; }
     a { color: #F5C842; }
+    strong { color: #f2f2f7; }
     .divider {
       border: none;
-      border-top: 1px solid #2c2c2e;
+      border-top: 1px solid rgba(255,255,255,0.08);
       margin: 40px 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <a class="back" href="index.html">← Costivo</a>
+    <a class="back" href="index.html">
+      <img src="icon.png" alt="Costivo" />← Back
+    </a>
 
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: April 30, 2026</p>
@@ -107,7 +120,7 @@
     <h2>Contact</h2>
     <p>
       If you have any questions about this privacy policy, contact us at:<br />
-      <a href="mailto:support@costivo.app">support@costivo.app</a>
+      <a href="mailto:appcostivo@gmail.com">appcostivo@gmail.com</a>
     </p>
   </div>
 </body>

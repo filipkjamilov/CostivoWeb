@@ -8,7 +8,8 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #111111;
+      background: linear-gradient(160deg, #3D3010 0%, #1E1B14 50%, #111111 100%);
+      background-attachment: fixed;
       color: #f2f2f7;
       min-height: 100vh;
       display: flex;
@@ -21,14 +22,12 @@
     .icon {
       width: 96px;
       height: 96px;
-      background: #F5C842;
       border-radius: 22px;
       margin: 0 auto 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 48px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
     }
+    .icon img { width: 100%; height: 100%; display: block; }
     h1 { font-size: 2rem; font-weight: 700; margin-bottom: 12px; }
     p.tagline {
       font-size: 1.05rem;
@@ -38,13 +37,14 @@
     }
     .badge {
       display: inline-block;
-      background: #1c1c1e;
-      border: 1px solid #3a3a3c;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 12px;
       padding: 12px 24px;
       font-size: 0.9rem;
       color: #aeaeb2;
       margin-bottom: 32px;
+      backdrop-filter: blur(8px);
     }
     nav a {
       display: inline-block;
@@ -63,7 +63,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="icon">🔨</div>
+    <div class="icon"><img src="icon.png" alt="Costivo" /></div>
     <h1>Costivo</h1>
     <p class="tagline">
       Fast, professional cost estimates for craftsmen.<br />
@@ -72,7 +72,7 @@
     <div class="badge">Available on the App Store · iOS</div>
     <nav>
       <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="mailto:support@costivo.app">Support</a>
+      <a href="mailto:appcostivo@gmail.com">Support</a>
     </nav>
     <footer>© 2026 Costivo. All rights reserved.</footer>
   </div>
